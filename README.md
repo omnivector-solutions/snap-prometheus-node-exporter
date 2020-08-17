@@ -5,7 +5,12 @@ Find out more about the prometheus-node-exporter [here](https://github.com/prome
 
 
 ### Build
-To install this snap you first need to build it. From the root of this repository, run:
+##### Requirements
+Lxd and snapcraft are required to build this snap, if you don't already have them installed, run the following commands:
+* `lxd` - `sudo snap install lxd && sudo lxd init --auto`
+* `snapcraft` - `sudo snap install snapcraft --classsic`
+
+Once you have the build requirements installed, from the root of this repository:
 ```bash
 snapcraft --use-lxd
 ```
