@@ -1,0 +1,24 @@
+name: prometheus-node-exporter
+summary: Prometheus Node Exporter
+description: |
+  Prometheus exporter for hardware and OS metrics exposed by *NIX kernels, written in Go with pluggable metric collectors.
+
+version: 0.0.1
+
+grade: stable
+confinement: classic
+
+base: core20
+
+apps:
+  prometheus-node-exporter:
+    daemon: simple
+    environment:
+      PATH: /snap/bin
+    command: bin/node_exporter
+
+parts:
+  prometheus-node-exporter:
+    source: https://github.com/prometheus/node_exporter.git
+    plugin: go
+    go-channel: 1.14/stable
