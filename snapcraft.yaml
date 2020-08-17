@@ -14,7 +14,6 @@ apps:
   prometheus-node-exporter:
     daemon: simple
     environment:
-      PATH: /snap/bin
     command: wrappers/node_exporter
 
 parts:
