@@ -15,7 +15,7 @@ snapcraft --use-lxd
 ```
 
 ### Installation
-Once the snap has built, you can install it with:
+After the snap finishes building, you can install it with:
 ```bash
 sudo snap install prometheus-node-exporter_`cat VERSION`_amd64.snap --classic --dangerous
 ```
