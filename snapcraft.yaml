@@ -13,7 +13,6 @@ base: core20
 apps:
   prometheus-node-exporter:
     daemon: simple
-    environment:
     command: wrappers/node_exporter
 
 parts:
