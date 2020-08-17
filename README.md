@@ -1,5 +1,7 @@
 # prometheus-node-exporter-snap
-This repository contains the components needed to build the prometheus-node-exporter snap.
+This repository contains the components needed to build the prometheus-node-exporter as a snap.
+
+Find out more about the prometheus-node-exporter [here](https://github.com/prometheus/node_exporter).
 
 
 ### Build
