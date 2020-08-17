@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+
+ARGS=""
+node_exporter_config=$SNAP_COMMON/node-exporter.conf
+
+if [[ -f $node_exporter_config ]]; then
+    . $node_exporter_config
+fi
+
+exec $SNAP/bin/node_exporter $ARGS
